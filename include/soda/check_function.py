@@ -9,7 +9,7 @@ def check(scan_name, checks_subpath=None, data_source='retail', project_root='in
     scan.set_verbose()
     scan.add_configuration_yaml_file(config_file)
     scan.set_data_source_name(data_source)
-    scan.add_sodacl_yml_file(checks_path)
+    scan.add_sodacl_yaml_files(checks_path)
     scan.set_scan_definition_name(scan_name)
 
     result = scan.execute()
